@@ -1,17 +1,18 @@
 name: Hello Devops
 
 on:
-    push:
+  push:
+
 jobs:
-    hello:
-        runs-on: windows-latest
+  hello:
+    runs-on: windows-latest
 
-        steps:
-           - name: Welcome Message
-            run: echo "Hello from Merwin J"
+    steps:
+      - name: Welcome Message
+        run: echo "Hello from Merwin J"
 
-           - name: Show Date
-            run: date
+      - name: Show Date
+        run: Get-Date
 
-           - name: Show User
-            run: whoami
+      - name: Show User
+        run: whoami
