@@ -1,0 +1,17 @@
+name: Hello Devops
+
+on:
+    push:
+jobs:
+    hello:
+        runs-on: windows-latest
+
+        steps:
+           - name: Welcome Message
+            run: echo "Hello from Merwin J"
+
+           - name: Show Date
+            run: date
+
+           - name: Show User
+            run: whoami
